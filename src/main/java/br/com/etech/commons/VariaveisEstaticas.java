@@ -1,11 +1,14 @@
 package br.com.etech.commons;
 
+import io.restassured.response.ResponseBody;
+
 import java.util.Map;
 
 public class VariaveisEstaticas {
 
     static Map<String, String> params;
     static String body;
+    static ResponseBody responseBody;
     static Map<String, String> requestBody;
     static String cookie;
 
@@ -29,8 +32,16 @@ public class VariaveisEstaticas {
         return body;
     }
 
+    public static ResponseBody getResponseBody() {
+        return responseBody;
+    }
+
     public static void setBody(String body) {
         VariaveisEstaticas.body = body;
+    }
+
+    public static void setResponseBody(ResponseBody body) {
+        VariaveisEstaticas.responseBody = body;
     }
 
     public static Map<String, String> getParams() {
