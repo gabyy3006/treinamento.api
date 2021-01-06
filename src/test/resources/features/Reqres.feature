@@ -81,5 +81,4 @@ Funcionalidade: Validar as requisições de usuario
     Quando realizar a requisição POST no serviço de senha nao inserido no login
     Então devo receber a chave "error" no retorno do serviço
 
-  @DelayedResponse
-  
+

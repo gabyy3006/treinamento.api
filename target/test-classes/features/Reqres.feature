@@ -80,3 +80,5 @@ Funcionalidade: Validar as requisições de usuario
     Dado recuperar as informações de senha nao inserido com email "peter@klaven" no login
     Quando realizar a requisição POST no serviço de senha nao inserido no login
     Então devo receber a chave "error" no retorno do serviço
+
+
